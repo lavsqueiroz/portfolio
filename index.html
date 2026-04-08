@@ -3,35 +3,43 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lavínia A. N. de Queiroz</title>
+  <title>Lavínia A. N. de Queiroz — Product Manager</title>
+  <meta name="description" content="Product Manager com trajetória em QA, Product Owner e IA. Produto, processo e propósito." />
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-  <nav class="nav">
-    <span class="nav-logo">L.</span>
+  <!-- NAV -->
+  <nav class="nav" role="navigation" aria-label="Navegação principal">
+    <a href="#" class="nav-logo" aria-label="Início">L.</a>
     <ul class="nav-links">
       <li><a href="#sobre">Sobre</a></li>
       <li><a href="#projetos">Projetos</a></li>
       <li><a href="#contato">Contato</a></li>
     </ul>
+    <a href="#contato" class="nav-cta">Fale comigo</a>
   </nav>
 
-  <section class="hero">
+  <!-- HERO -->
+  <section class="hero" aria-label="Apresentação">
     <div class="hero-content">
-      <p class="hero-eyebrow">Olá, sou</p>
+      <div class="hero-badge">Disponível para oportunidades</div>
       <h1 class="hero-name">Lavínia A. N.<br><em>de Queiroz</em></h1>
-      <p class="hero-tagline">QA → PO → PM → IA.<br>Produto, processo e propósito.</p>
-      <div class="hero-pills">
-        <span>Product Manager</span>
-        <span>QA</span>
-        <span>Product Owner</span>
-        <span>IA</span>
+      <p class="hero-title">Product Manager · QA · IA</p>
+      <p class="hero-tagline">QA → PO → PM → IA. Produto, processo e propósito.</p>
+      <div class="hero-pills" role="list" aria-label="Competências">
+        <span role="listitem">Product Manager</span>
+        <span role="listitem">Quality Assurance</span>
+        <span role="listitem">Product Owner</span>
+        <span role="listitem">Inteligência Artificial</span>
       </div>
-      <a href="#sobre" class="hero-cta">Conheça meu trabalho ↓</a>
+      <div class="hero-actions">
+        <a href="#contato" class="btn-primary">Entre em contato</a>
+        <a href="#sobre" class="btn-secondary">Saiba mais ↓</a>
+      </div>
     </div>
     <div class="hero-decoration" aria-hidden="true">
       <div class="circle c1"></div>
@@ -41,43 +49,44 @@
     </div>
   </section>
 
-  <section id="sobre" class="section sobre">
+  <!-- SOBRE -->
+  <section id="sobre" class="section sobre" aria-labelledby="sobre-titulo">
     <div class="container">
       <div class="section-label">/ sobre</div>
       <div class="sobre-grid">
         <div class="sobre-text">
-          <h2>Uma trajetória<br><em>em movimento</em></h2>
-          <p>Comecei garantindo qualidade, aprendi a priorizar como PO, evoluí para estratégia como PM — e hoje incorporo inteligência artificial ao jeito de pensar produto.</p>
-          <p>Sou a pessoa que transita entre o técnico e o humano, entre dados e empatia, entre o que existe e o que pode ser construído.</p>
-          <p>Flexível por natureza. Precisa por formação.</p>
+          <h2 id="sobre-titulo">Uma trajetória<br><em>em movimento</em></h2>
+          <p>Comecei garantindo qualidade como QA, evoluí para priorização como Product Owner, assumi a visão estratégica como Product Manager — e hoje integro inteligência artificial ao jeito de pensar e executar produto.</p>
+          <p>Sou a profissional que conecta o técnico ao humano, dados à empatia, processo à inovação.</p>
+          <p class="destaque">Flexível por natureza. Precisa por formação.</p>
         </div>
-        <div class="sobre-timeline">
+        <div class="sobre-timeline" aria-label="Trajetória profissional">
           <div class="tl-item">
-            <div class="tl-dot"></div>
+            <div class="tl-dot" aria-hidden="true"></div>
             <div class="tl-content">
               <span class="tl-role">QA Engineer</span>
-              <span class="tl-desc">Qualidade, testes, processos</span>
+              <span class="tl-desc">Qualidade, automação de testes, processos</span>
             </div>
           </div>
           <div class="tl-item">
-            <div class="tl-dot"></div>
+            <div class="tl-dot" aria-hidden="true"></div>
             <div class="tl-content">
               <span class="tl-role">Product Owner</span>
-              <span class="tl-desc">Backlog, priorização, entregas</span>
+              <span class="tl-desc">Backlog, priorização, entregas ágeis</span>
             </div>
           </div>
           <div class="tl-item">
-            <div class="tl-dot"></div>
+            <div class="tl-dot" aria-hidden="true"></div>
             <div class="tl-content">
               <span class="tl-role">Product Manager</span>
-              <span class="tl-desc">Estratégia, visão, impacto</span>
+              <span class="tl-desc">Estratégia de produto, visão e impacto</span>
             </div>
           </div>
           <div class="tl-item tl-current">
-            <div class="tl-dot"></div>
+            <div class="tl-dot" aria-hidden="true"></div>
             <div class="tl-content">
-              <span class="tl-role">IA & Produto</span>
-              <span class="tl-desc">Inteligência artificial aplicada</span>
+              <span class="tl-role">IA & Produto <span class="tl-badge">Atual</span></span>
+              <span class="tl-desc">IA aplicada a processos e decisões de produto</span>
             </div>
           </div>
         </div>
@@ -85,49 +94,54 @@
     </div>
   </section>
 
-  <section id="projetos" class="section projetos">
+  <!-- PROJETOS -->
+  <section id="projetos" class="section projetos" aria-labelledby="projetos-titulo">
     <div class="container">
       <div class="section-label">/ projetos</div>
-      <h2>Trabalhos em destaque</h2>
+      <h2 id="projetos-titulo">Trabalhos em destaque</h2>
+      <p class="section-sub">Casos, decisões e aprendizados ao longo da trajetória.</p>
       <div class="projetos-grid">
         <article class="projeto-card">
-          <div class="projeto-num">01</div>
+          <div class="projeto-num" aria-hidden="true">01</div>
           <h3>Em breve</h3>
-          <p>Este espaço será preenchido com projetos reais. Volte em breve!</p>
-          <span class="projeto-tag">Product</span>
+          <p>Este espaço será preenchido com projetos reais e resultados concretos.</p>
+          <span class="projeto-tag">Product Management</span>
         </article>
         <article class="projeto-card">
-          <div class="projeto-num">02</div>
+          <div class="projeto-num" aria-hidden="true">02</div>
           <h3>Em breve</h3>
-          <p>Casos de uso, decisões de produto e aprendizados do caminho.</p>
-          <span class="projeto-tag">QA</span>
+          <p>Casos de uso, decisões de produto e aprendizados da jornada como QA e PO.</p>
+          <span class="projeto-tag">Quality Assurance</span>
         </article>
         <article class="projeto-card">
-          <div class="projeto-num">03</div>
+          <div class="projeto-num" aria-hidden="true">03</div>
           <h3>Em breve</h3>
-          <p>Explorações com IA aplicada a fluxos de produto e processos.</p>
-          <span class="projeto-tag">IA</span>
+          <p>Explorações com IA aplicada a fluxos de produto, priorização e processos.</p>
+          <span class="projeto-tag">Inteligência Artificial</span>
         </article>
       </div>
     </div>
   </section>
 
-  <section id="contato" class="section contato">
+  <!-- CONTATO -->
+  <section id="contato" class="section contato" aria-labelledby="contato-titulo">
     <div class="container contato-inner">
       <div class="section-label">/ contato</div>
-      <h2>Vamos conversar?</h2>
-      <p class="contato-sub">Estou aberta a novas oportunidades, colaborações e boas trocas.</p>
-      <a href="mailto:seu@email.com" class="contato-btn">seu@email.com</a>
+      <h2 id="contato-titulo">Vamos conversar?</h2>
+      <p class="contato-sub">Estou aberta a oportunidades, colaborações e boas trocas na área de produto e tecnologia.</p>
+      <a href="mailto:seu@email.com" class="btn-primary contato-email">seu@email.com</a>
       <div class="contato-links">
-        <a href="https://github.com/lavsqueiroz" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://linkedin.com/in/lavsqueiroz" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/lavsqueiroz" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Lavínia">GitHub</a>
+        <span class="contato-sep" aria-hidden="true">·</span>
+        <a href="https://linkedin.com/in/lavsqueiroz" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Lavínia">LinkedIn</a>
       </div>
     </div>
   </section>
 
-  <footer class="footer">
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
     <span>© 2026 Lavínia A. N. de Queiroz</span>
-    <span>Feito com intenção ✦</span>
+    <span>Product Manager · São Paulo, SP</span>
   </footer>
 
   <script src="script.js"></script>
